@@ -6,6 +6,7 @@ import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import ProjectTracker from "./pages/ProjectTracker";
 import ClientDashboard from "./pages/clientDashboard";
+import Chat from "./pages/Chat";
 
 function App() {
 
@@ -28,6 +29,10 @@ function App() {
 <Route
   path="/client-dashboard"
   element={<ClientDashboard />}
+/>
+<Route
+  path="/chat"
+  element={<Chat />}
 />
       </Routes>
 

@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 import {
-
   LayoutDashboard,
   Clock3,
   Bell,
@@ -13,10 +12,16 @@ import {
   CalendarDays,
   FileText,
   Flag,
-
+  MessageCircle,
+  LogOut,
+  FolderKanban,
 } from "lucide-react";
 
 import { useNavigate } from "react-router-dom";
+const handleLogout = () => {
+  localStorage.clear();
+  navigate("/login");
+};
 
 function ClientDashboard() {
 
@@ -181,6 +186,13 @@ function ClientDashboard() {
               </p>
 
             </div>
+            <div
+  onClick={() => navigate("/chat")}
+  className="flex items-center gap-4 hover:bg-white/10 p-4 rounded-2xl cursor-pointer transition-all"
+>
+  <MessageCircle size={20} />
+  <p>Live Chat</p>
+</div>
 
             {/* PROJECTS */}
             <div
@@ -226,7 +238,43 @@ function ClientDashboard() {
         </div>
 
         {/* USER CARD */}
-        <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
+      <div>
+
+  <div className="bg-white/5 border border-white/10 p-5 rounded-2xl mb-4">
+
+    <div className="flex items-center gap-4">
+
+      <div className="w-12 h-12 rounded-full bg-indigo-600 flex items-center justify-center">
+
+        <User size={20} />
+
+      </div>
+
+      <div>
+
+        <p className="font-semibold">
+          {user.name}
+        </p>
+
+        <p className="text-sm text-gray-400">
+          Client Account
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <button
+    onClick={handleLogout}
+    className="w-full bg-red-500 hover:bg-red-600 py-3 rounded-2xl flex items-center justify-center gap-3 font-semibold transition-all"
+  >
+    <LogOut size={18} />
+    Logout
+  </button>
+
+</div>
 
           <div className="flex items-center gap-4">
 
@@ -256,8 +304,6 @@ function ClientDashboard() {
 
         </div>
 
-      </div>
-
       {/* MAIN */}
       <div className="flex-1 p-8 overflow-y-auto">
 
@@ -275,8 +321,59 @@ function ClientDashboard() {
             Manage your projects and track progress in real-time
 
           </p>
+          <div className="flex gap-4 mt-5 flex-wrap">
+
+  <button
+    onClick={() => navigate("/tracker")}
+    className="bg-indigo-600 hover:bg-indigo-700 px-5 py-3 rounded-xl text-sm font-medium"
+  >
+    Track Projects
+  </button>
+
+  <button
+    onClick={() => navigate("/chat")}
+    className="bg-[#0f172a] border border-white/10 hover:border-indigo-500 px-5 py-3 rounded-xl text-sm font-medium"
+  >
+    Live Chat
+  </button>
+
+</div>
 
         </div>
+        <div className="bg-white/5 border border-white/10 p-6 rounded-3xl mb-10">
+
+  <h3 className="text-xl font-bold mb-5">
+    Recent Projects
+  </h3>
+
+  {projects.slice(0, 3).map((project) => (
+
+    <div
+      key={project._id}
+      className="flex justify-between items-center border-b border-white/10 py-4"
+    >
+
+      <div>
+
+        <p className="font-semibold">
+          {project.serviceType}
+        </p>
+
+        <p className="text-sm text-gray-400">
+          {project.status}
+        </p>
+
+      </div>
+
+      <FolderKanban
+        className="text-indigo-400"
+      />
+
+    </div>
+
+  ))}
+
+</div>
 
         {/* ANALYTICS */}
         <div className="grid md:grid-cols-3 gap-6 mb-10">

@@ -18,6 +18,7 @@ import {
   LogOut,
   Upload,
   FileText,
+  MessageCircle,
 
 } from "lucide-react";
 
@@ -249,6 +250,24 @@ function Dashboard() {
               </p>
 
             </div>
+            <div
+
+  onClick={() =>
+    window.location.href = "/chat"
+  }
+
+  className="flex items-center gap-4 hover:bg-white/10 p-4 rounded-2xl cursor-pointer transition-all"
+>
+
+  <MessageCircle />
+
+  <p>
+
+    Live Chat
+
+  </p>
+
+</div>
 
             <div
 
@@ -549,6 +568,19 @@ function Dashboard() {
                 </span>
 
               </div>
+              {project.priority && (
+
+  <div className="mt-4">
+
+    <span className="bg-red-500 px-4 py-2 rounded-xl text-sm">
+
+      Priority: {project.priority}
+
+    </span>
+
+  </div>
+
+)}
 
               {/* DESCRIPTION */}
               <div className="bg-[#020617]/80 p-5 rounded-2xl mb-6">
@@ -566,6 +598,41 @@ function Dashboard() {
                 </p>
 
               </div>
+               <div className="grid md:grid-cols-2 gap-5 mb-6">
+
+  <div className="bg-[#020617]/80 p-5 rounded-2xl">
+
+    <p className="text-gray-400 mb-2">
+
+      Budget
+
+    </p>
+
+    <h2 className="text-xl font-bold text-green-400">
+
+      {project.budget}
+
+    </h2>
+
+  </div>
+
+  <div className="bg-[#020617]/80 p-5 rounded-2xl">
+
+    <p className="text-gray-400 mb-2">
+
+      Deadline
+
+    </p>
+
+    <h2 className="text-xl font-bold text-yellow-400">
+
+      {project.deadline}
+
+    </h2>
+
+  </div>
+
+</div>
 
               {/* CONTROLS */}
               <div className="grid md:grid-cols-3 gap-5 mb-6">
@@ -677,10 +744,34 @@ function Dashboard() {
                     <option>
                       Rahul
                     </option>
+                    <option>
+                      janaki
+                    </option>
+                    <option>
+                      sritharan
+                    </option>
 
                   </select>
 
                 </div>
+                <div>
+
+  <label className="block mb-2">
+    Estimated Completion
+  </label>
+
+  <input
+    type="date"
+    value={project.estimatedCompletion || ""}
+    onChange={(e) =>
+      updateProject(project._id, {
+        estimatedCompletion: e.target.value,
+      })
+    }
+    className="w-full bg-[#020617] border border-white/10 p-4 rounded-2xl"
+  />
+
+</div>
 
                 {/* PROGRESS */}
                 <div>
