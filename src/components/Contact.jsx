@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 
 function Contact() {
-
+//we have use the usestate function to set the curr data should display in the future
   const [formData, setFormData] = useState({
     name: "",
     email: "",
