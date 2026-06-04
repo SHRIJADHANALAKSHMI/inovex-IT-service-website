@@ -10,7 +10,7 @@ function Contact() {
     message: "",
   });
 
-  // Handle Input Change
+  // Handle Input Change.
   const handleChange = (e) => {
 
     const { name, value } = e.target;
@@ -21,7 +21,7 @@ function Contact() {
     });
   };
 
-  // Handle Form Submit
+  // Handle Form Submit using try-catch block . here we have use api for the connection between frontend and backend
   const handleSubmit = async (e) => {
 
     e.preventDefault();
