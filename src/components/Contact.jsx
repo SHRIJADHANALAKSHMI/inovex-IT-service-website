@@ -10,7 +10,7 @@ function Contact() {
     message: "",
   });
 
-  // Handle Input Change.
+  // Handle Input Change. for the set the form
   const handleChange = (e) => {
 
     const { name, value } = e.target;
