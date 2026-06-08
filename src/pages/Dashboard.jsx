@@ -87,7 +87,7 @@ function Dashboard() {
     }
   };
 
-  // DELETE PROJECT
+  // DELETE PROJECT function
   const deleteProject = async (id) => {
 
     const confirmDelete =
