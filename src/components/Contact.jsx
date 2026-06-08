@@ -3,14 +3,14 @@ import { useState } from "react";
 import axios from "axios";
 
 function Contact() {
-
+//we have use the usestate function to set the curr data should display in the future
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  // Handle Input Change
+  // Handle Input Change. for the set the form
   const handleChange = (e) => {
 
     const { name, value } = e.target;
@@ -21,7 +21,7 @@ function Contact() {
     });
   };
 
-  // Handle Form Submit
+  // Handle Form Submit using try-catch block . here we have use api for the connection between frontend and backend
   const handleSubmit = async (e) => {
 
     e.preventDefault();
