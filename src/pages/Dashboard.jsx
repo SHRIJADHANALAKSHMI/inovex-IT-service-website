@@ -122,7 +122,7 @@ function Dashboard() {
     window.location.href = "/login";
   };
 
-  // FILTER
+  // FILTER concept is writtern
   const filteredProjects =
     projects.filter((project) => {
 
