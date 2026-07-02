@@ -4,7 +4,7 @@ function Footer() {
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
 
-        {/* Company Info */}
+        {/* Company Info  added */}
         <div>
 
           <h2 className="text-3xl font-bold text-indigo-400 mb-6">
@@ -17,7 +17,7 @@ function Footer() {
 
         </div>
 
-        {/* Quick Links */}
+        {/* Quick Links  for services and some other link are provided*/}
         <div>
 
           <h3 className="text-xl font-semibold mb-6">
