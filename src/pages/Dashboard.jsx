@@ -63,7 +63,7 @@ function Dashboard() {
 
     try {
 
-      // AUTO CONDITIONS check the update data
+      // AUTO CONDITIONS check the update data with try and catch condition
       
       if (
         updatedData.status === "Completed"
