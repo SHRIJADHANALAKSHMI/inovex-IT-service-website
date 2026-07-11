@@ -22,17 +22,17 @@ function ProjectTracker() {
     localStorage.getItem("user")
   );
 
-  // PROJECTS
+  // PROJECTS usestate with help it
   const [projects, setProjects] = useState([]);
 
-  // FETCH PROJECTS
+  // FETCH PROJECTS with help of useffect
   useEffect(() => {
 
     fetchProjects();
 
   }, []);
 
-  // GET USER PROJECTS
+  // GET USER PROJECTS 
   const fetchProjects = async () => {
 
     try {
