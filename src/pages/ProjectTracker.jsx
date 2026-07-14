@@ -25,14 +25,14 @@ function ProjectTracker() {
   // PROJECTS usestate with help it
   const [projects, setProjects] = useState([]);
 
-  // FETCH PROJECTS with help of useffect
+  // FETCH PROJECTS with help of  useffect fetchprojects
   useEffect(() => {
 
     fetchProjects();
 
   }, []);
 
-  // GET USER PROJECTS 
+  // GET USER PROJECTS async fetchproject
   const fetchProjects = async () => {
 
     try {
@@ -58,7 +58,7 @@ function ProjectTracker() {
     }
   };
 
-  // STATUS COLORS
+  // STATUS COLORS has added
   const statusColors = {
 
     Pending: "bg-yellow-500",
