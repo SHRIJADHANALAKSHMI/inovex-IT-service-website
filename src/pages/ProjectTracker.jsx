@@ -25,14 +25,14 @@ function ProjectTracker() {
   // PROJECTS usestate with help it
   const [projects, setProjects] = useState([]);
 
-  // FETCH PROJECTS with help of  useffect fetchprojects
+  // FETCH PROJECTS with help of  useffect fetchprojects.
   useEffect(() => {
 
     fetchProjects();
 
   }, []);
 
-  // GET USER PROJECTS async fetchproject
+  // GET USER PROJECTS async fetchproject api/projects
   const fetchProjects = async () => {
 
     try {
