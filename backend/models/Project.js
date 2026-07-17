@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const projectSchema = new mongoose.Schema({
 
-  // CLIENT ID schema constructed
+  // CLIENT ID schema constructed using mongoose
   clientId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
