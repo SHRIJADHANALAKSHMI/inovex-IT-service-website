@@ -20,19 +20,19 @@ const projectSchema = new mongoose.Schema({
     required: true,
   },
 
-  // BUDGET
+  // BUDGET type schema constructed
   budget: {
     type: String,
     required: true,
   },
 
-  // DEADLINE
+  // DEADLINE type schema
   deadline: {
     type: String,
     required: true,
   },
 
-  // DESCRIPTION
+  // DESCRIPTION type schema
   description: {
     type: String,
     required: true,
