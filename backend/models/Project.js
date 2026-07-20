@@ -32,13 +32,13 @@ const projectSchema = new mongoose.Schema({
     required: true,
   },
 
-  // DESCRIPTION type schema
+  // DESCRIPTION type schema 
   description: {
     type: String,
     required: true,
   },
 
-  // PROJECT STATUS
+  // PROJECT STATUS type schema constructed
   status: {
     type: String,
 
@@ -57,13 +57,13 @@ const projectSchema = new mongoose.Schema({
     default: "Pending",
   },
 
-  // ASSIGNED DEVELOPER
+  // ASSIGNED DEVELOPER type schema constructed
   assignedDeveloper: {
     type: String,
     default: "Not Assigned",
   },
 
-  // ESTIMATED COMPLETION DATE
+  // ESTIMATED COMPLETION DATE type schema constructed
   estimatedCompletion: {
     type: String,
     default: "Not Updated",
