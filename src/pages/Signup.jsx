@@ -16,7 +16,7 @@ function Signup() {
 
   });
 
-  // Handle Input Change
+  // Handle Input Change with setformdata
   const handleChange = (e) => {
 
     setFormData({
