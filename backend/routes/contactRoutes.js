@@ -3,6 +3,7 @@ const express = require("express");
 const Contact = require("../models/Contact"); // added contact model
 
 const router = express.Router();
+//created router.post
 
 router.post("/", async (req, res) => {
 
@@ -33,6 +34,7 @@ router.post("/", async (req, res) => {
   }
 
 });
+//create router.get
 router.get("/", async (req, res) => {
 
   try {
