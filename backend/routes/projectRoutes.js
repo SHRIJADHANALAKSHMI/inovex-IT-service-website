@@ -37,7 +37,7 @@ const upload = multer({
 });
 
 
-// CREATE PROJECT
+// CREATE PROJECT with router.post
 router.post("/", async (req, res) => {
 
   try {
