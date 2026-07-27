@@ -3,7 +3,7 @@ const express = require("express");
 const Contact = require("../models/Contact"); // added contact model
 
 const router = express.Router();
-//created router.post
+//created router.post with try and catch block to handle the error
 
 router.post("/", async (req, res) => {
 
