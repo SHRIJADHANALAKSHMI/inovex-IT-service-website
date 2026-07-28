@@ -37,7 +37,7 @@ function Dashboard() {
 
   }, []);
 
-  // GET PROJECTS
+  // GET PROJECTS with try,catch block
   const fetchProjects = async () => {
 
     try {
