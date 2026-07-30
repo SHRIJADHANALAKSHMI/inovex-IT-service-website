@@ -69,19 +69,19 @@ const projectSchema = new mongoose.Schema({
     default: "Not Updated",
   },
 
-  // PROJECT PROGRESS
+  // PROJECT PROGRESS schema has been contructed
   progress: {
     type: Number,
     default: 10,
   },
 
-  // PROJECT FILE
+  // PROJECT FILE schema has been contructed
   projectFile: {
     type: String,
     default: "",
   },
 
-  // CREATED DATE
+  // CREATED DATE schema has been contructed
   createdAt: {
     type: Date,
     default: Date.now,
