@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
 const contactSchema = new mongoose.Schema({
-//name schema has been constructed
+//name schema 
   name: {
     type: String,
     required: true,
   },
-//email schema has been constructed
+//email schema 
   email: {
     type: String,
     required: true,
