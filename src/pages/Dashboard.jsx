@@ -30,7 +30,7 @@ function Dashboard() {
 
   const [filter, setFilter] = useState("All");
 
-  // FETCH PROJECTS
+  // FETCH PROJECTS using useeffect
   useEffect(() => {
 
     fetchProjects();
