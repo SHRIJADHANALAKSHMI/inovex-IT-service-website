@@ -1,4 +1,4 @@
-Here’s a much more premium, GitHub-level README version for your project 🔥
+Here’s a much more premium, GitHub-level README version for your project .
 
 # Inovex — Modern SaaS Project Management Platform
 
