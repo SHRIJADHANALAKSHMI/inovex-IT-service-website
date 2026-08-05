@@ -4,7 +4,7 @@ Here’s a much more premium, GitHub-level README version for your project .
 
 <div align="center">
 
-### ⚡ Full Stack MERN SaaS Application
+###  Full Stack MERN SaaS Application
 
 ### Built for Real-Time Client & Admin Collaboration
 
