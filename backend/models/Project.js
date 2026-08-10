@@ -26,7 +26,7 @@ const projectSchema = new mongoose.Schema({
     required: true,
   },
 
-  // DEADLINE type schema
+  // DEADLINE type schema constructed 
   deadline: {
     type: String,
     required: true,
@@ -38,7 +38,7 @@ const projectSchema = new mongoose.Schema({
     required: true,
   },
 
-  // PROJECT STATUS type schema constructed
+  // PROJECT STATUS type schema has been constructed
   status: {
     type: String,
 
