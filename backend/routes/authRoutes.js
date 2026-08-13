@@ -8,9 +8,6 @@ const User = require("../models/User");
 
 const router = express.Router();
 
-
-// ================= SIGNUP =================
-
 router.post("/signup", async (req, res) => {
 
   try {
