@@ -8,7 +8,7 @@ const projectSchema = new mongoose.Schema({
     ref: "User",
   },
 
-  // CLIENT NAME schema constructed
+  
   clientName: {
     type: String,
     required: true,
