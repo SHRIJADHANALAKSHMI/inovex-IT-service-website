@@ -18,7 +18,7 @@ router.post("/signup", async (req, res) => {
       password,
     } = req.body;
 
-    // Check Existing User
+    // Check Existing User with await user.findone
     const existingUser = await User.findOne({
       email,
     });
