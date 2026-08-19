@@ -1,12 +1,12 @@
 Here’s a much more premium, GitHub-level README version for your project .
 
-# Inovex — Modern SaaS Project Management Platform
+# Inovex — Modern SaaS Project Management Platform: 
 
 <div align="center">
 
 ###  Full Stack MERN SaaS Application
 
-### Built for Real-Time Client & Admin Collaboration
+### Built for Real-Time Client & Admin Collaboration:
 
 <img src="https://img.shields.io/badge/React-Frontend-blue?style=for-the-badge&logo=react" />
 <img src="https://img.shields.io/badge/Node.js-Backend-green?style=for-the-badge&logo=node.js" />
