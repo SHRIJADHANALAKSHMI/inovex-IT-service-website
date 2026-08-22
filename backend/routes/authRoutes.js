@@ -29,7 +29,7 @@ router.post("/signup", async (req, res) => {
 
     }
 
-    // Encrypt Password
+    // Encrypt Password has been created
     const hashedPassword = await bcrypt.hash(
       password,
       10
