@@ -25,7 +25,6 @@ function ProjectTracker() {
   // PROJECTS usestate with help it
   const [projects, setProjects] = useState([]);
 
-  // FETCH PROJECTS with help of  useffect fetchprojects.
   useEffect(() => {
 
     fetchProjects();
